@@ -1,0 +1,91 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{%block contents%}
+<section class="we-do">
+    <div class="container">
+        <div class="we-do-details">
+            <div class="section-header text-center">
+                <h2>Machine Learning based Click Bait Detection System</h2>
+                <p>
+                   The state of the media and related platforms that disseminate information is currently undergoing drastic transformation. Click bait are articles or other form of information that exaggerate the content on the targeted pages. When going through such content people often end up jumping on wrong conclusions. In this research we seek to construct an efficacious computational system primarily using ensemble learning. Several Machine learning algorithms such as Logistic regression, Stochastic Gradient Descent and Random Forest have been used.
+                </p>
+            </div><!--/.section-header-->
+            <div class="we-do-carousel">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img src="{%static 'images/home/consultency.png'%}" alt="image of consultency"/>
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Removing Stop words
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        Before we discuss their removal first let’s understand stop words. Stop words are some commonly occurring words in any given language and these words don’t help much in determining the nature of text or text analyses.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img src="{%static 'images/home/busisness_grow.png'%}" alt="image of business"/>
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                TF IDF Vectorizer
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        When dealing with data then one must understand that machine learning algorithms can work with works from  natural language. Therefore, we need to convert these words into numbers or vectors for further analysis.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="single-we-do-box text-center">
+                            <div class="we-do-description">
+                                <div class="we-do-info">
+                                    <div class="we-do-img">
+                                        <img src="{%static 'images/home/support-logo.png'%}" alt="image of support"/>
+                                    </div><!--/.we-do-img-->
+                                    <div class="we-do-topics">
+                                        <h2>
+                                            <a href="#">
+                                                Count Vectorizer
+                                            </a>
+                                        </h2>
+                                    </div><!--/.we-do-topics-->
+                                </div><!--/.we-do-info-->
+                                <div class="we-do-comment">
+                                    <p>
+                                        Count vectorizer takes a collection of text documents as input and produces a vector of terms containing the count of each kind of token.
+                                    </p>
+                                </div><!--/.we-do-comment-->
+                            </div><!--/.we-do-description-->
+                        </div><!--/.single-we-do-box-->
+                    </div><!--/.col-->
+                </div><!--/.row-->
+            </div><!--/.we-do-carousel-->
+        </div><!--/.we-do-details-->
+    </div><!--/.container-->
+</section><!--/.we-do-->
+
+{%endblock%}

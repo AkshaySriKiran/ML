@@ -1,0 +1,35 @@
+{% extends 'users/userbase.html'%}
+{%block contents%}
+
+ <section id="intro">
+
+    <div class="intro-text">
+<!--        <div class="container" style="margin-top:-200px;">-->
+
+      <p><h3 align="center" style="color:white; font-weight:bold;">Test Predictions</h3></p>
+      <pre>
+          <center>
+          <h3>Given {{test_data}} and Result is <font color="RED">{{result}}</font></h3>
+        <form action="{%url 'user_predictions'%}" class="control-form" method="post">
+            {%csrf_token%}
+            <table class="sm-table">
+            <tr><td>age</td><td><input type="text" name="age" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>anaemia</td><td><input type="text" name="anaemia" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>creatinine_phosphokinase</td><td><input type="text" name="creatinine_phosphokinase" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>diabetes</td><td><input type="text" name="diabetes" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>ejection_fraction</td><td><input type="text" name="ejection_fraction" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>high_blood_pressure</td><td><input type="text" name="high_blood_pressure" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>platelets</td><td><input type="text" name="platelets" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>serum_creatinine</td><td><input type="text" name="serum_creatinine" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>serum_sodium</td><td><input type="text" name="serum_sodium" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>sex</td><td><input type="text" name="sex" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>smoking</td><td><input type="text" name="smoking" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td>time</td><td><input type="text" name="time" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></td></tr>
+            <tr><td></td><td><button type="submit" class="btn-primary">Submit</button> </td></tr>
+            </table>
+        </form>
+        </center>
+      </pre>
+    </div>
+  </section>
+{%endblock%}
